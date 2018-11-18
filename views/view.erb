@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>表示</title>
+  </head>
+  <body>
+    <% @data.each do |datum| %>
+      <div style="background-color: rgb(250, 220, 70);">
+        <p>誰が： <%= datum['creater_name'] %></p>
+        <p>内容： <%= datum['msg'] %></p>
+        <p>日時： <%= datum['up-time'] %></p>
+      </div>
+    <% end %>
+    <a href="/form">戻る</a>
+  </body>
+</html>
